@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 FROM debian:buster
 MAINTAINER Liang Chen "liangchenomc@gmail.com"
 
@@ -24,3 +25,9 @@ USER $IMG_UID
 WORKDIR $MR_HOME
 
 CMD $MR_HOME/etc/run.sh
+=======
+FROM alpine:3.4
+RUN apk update
+RUN apk add vim
+RUN apk add git
+>>>>>>> 82ee35136aada554934ae4ea3a4ec3e9a2e724a1
